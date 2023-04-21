@@ -47,6 +47,8 @@ h3 {
 /* apply styles to paragraphs */
 p {
   margin-bottom: 20px;
+  max-width: 60ch; /* limit text to 60 characters */
+
 }
 
 /* apply styles to links */
