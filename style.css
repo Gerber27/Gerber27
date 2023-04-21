@@ -104,8 +104,8 @@ li {
   grid-gap: 20px;
   padding: 20px;
   margin: 0 auto;
-  max-width: none;
-  width:100%
+  max-width: none; /* set max-width to none to stretch out to the full width */
+  width: 100%; /* set width to 100% to fill the available width */
 }
 
 /* apply styles to the page header */
