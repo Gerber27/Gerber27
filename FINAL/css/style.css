@@ -1,1 +1,132 @@
+/* reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* web-safe font stack */
+}
+
+/* import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* set variables for colors */
+:root {
+  --main-color: #ff0000;
+  --secondary-color: #6c757d;
+}
+
+/* apply styles to body */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: linear-gradient(to bottom right, #ffcccc, #ffffff);
+}
+
+/* apply styles to headings */
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+/* apply styles to paragraphs */
+p {
+  margin-bottom: 20px;
+  max-width: 60ch; /* limit text to 60 characters */
+}
+
+/* apply styles to links */
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+a:hover,
+a:active {
+  border-bottom-color: var(--main-color);
+}
+
+a:visited {
+  color: var(--secondary-color);
+}
+
+/* apply styles to images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* apply styles to time elements */
+time {
+  font-style: italic;
+}
+
+/* apply styles to abbreviation elements */
+abbr {
+  border-bottom: none;
+  cursor: help;
+  text-decoration: none;
+}
+
+/* apply styles to unordered list */
+ul {
+  margin-bottom: 20px;
+}
+
+/* apply styles to list items */
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* apply styles to the grid container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: none; /* set max-width to none to stretch out to the full width */
+  width: 100%; /* set width to 100% to fill the available width */
+}
+
+/* apply styles to the page header */
+header {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+/* apply styles to the page footer */
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
