@@ -63,8 +63,11 @@ a:visited {
 
 a:hover,
 a:active {
-  color: var(--secondary-color);
   border-bottom-color: var(--secondary-color);
+}
+
+a:visited {
+  color: var(--secondary-color);
 }
 
 /* apply styles to images */
@@ -100,7 +103,7 @@ li {
 /* apply styles to the grid container */
 .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
   padding: 20px;
   margin: 0 auto;
