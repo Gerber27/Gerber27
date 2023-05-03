@@ -53,7 +53,8 @@ p {
 }
 
 /* apply styles to links */
-a {
+a:link,
+a:visited {
   color: var(--main-color);
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -62,11 +63,8 @@ a {
 
 a:hover,
 a:active {
-  border-bottom-color: var(--main-color);
-}
-
-a:visited {
   color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
 }
 
 /* apply styles to images */
@@ -129,4 +127,3 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
